@@ -8,7 +8,7 @@ app.get("/", (req, res) => {
     res.send("Express on Vercel");
 });
 
-app.post("/hello", (req, res) => {
+app.post("/", (req, res) => {
     const data = req.body
     console.log(data);
     res.send(200, 'hello' + JSON.stringify(data));
